@@ -1,0 +1,81 @@
+.sau {
+    background: #899B45;
+    padding: 170px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 120px;
+
+    h4 {
+        margin: 0 auto 20px;
+        font-size: 20px;
+        max-width: 70%;
+    }
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.box {
+    width: 30%;
+    background: #9bad58;
+    border-radius: 16px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    h3 {
+        font-size: 24px;
+        color: #000;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+/* CSS para el botón de "Más Información" */
+
+.btn-1 {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #899B45;
+    color: #313525;
+    text-transform: uppercase;
+    border: 2px solid #899B45;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+
+    &:hover {
+        background-color: #fff;
+        color: #899B45;
+    }
+
+    &:after {
+        content: "\f101";
+        font-family: FontAwesome;
+        padding-left: 10px;
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+
+    &:hover:after {
+        transform: translateX(5px);
+    }
+}
+

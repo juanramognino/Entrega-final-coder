@@ -1,0 +1,24 @@
+/**BASE*/
+@import "./base/fuentes";
+@import "./base/reset";
+/**COMPONENTES*/
+@import "./components/bootstrap";
+/**LAYOUT*/
+@import "./layout/contacto";
+@import "./layout/header";
+@import "./layout/nosotros";
+@import "./layout/productos";
+@import "./layout/servicios";
+/**RESPONSIVE*/
+@import "./layout/media/media319";
+@import "./layout/media/media320-419";
+@import "./layout/media/media420-768";
+@import "./layout/media/media769-987";
+@import "./layout/media/media987";
+/**UTILITIES*/
+@import "./utilities/animaciones";
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+
+

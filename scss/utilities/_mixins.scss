@@ -1,0 +1,11 @@
+@mixin flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+/**Comprendi como usarlo pero ya habia realizado todo
+y no quiero hacerme quilombo en mi web :P **/

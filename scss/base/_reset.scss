@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+
+body {
+    text-align: center !important;
+    font-family: 'Poppins' sans-serif !important;
+}
+
+.container {
+    max-width: 12000px !important;
+    margin: 0 auto;
+}
+
+section [id] {
+    scroll-margin-top: 70px;
+}
+
+html {
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,234 @@
+@mixin idk {
+    text-decoration: none;
+    color: black;
+}
+
+
+.header {
+    background-image: url(../img/osp_f.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.menu {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    transition: background-color 0.5s ease;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fafafa;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.menu.sticky {
+    background-color: #fafafa;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.logo {
+    color:  #899B45;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 30px;
+    transition: transform 0.3s ease;
+}
+
+.menu.sticky .logo {
+    transform: scale(0.9);
+}
+
+/* Modifica el color de los enlaces cuando están en la sección Servicios */
+
+#Servicios {
+    scroll-margin-top: 120px;
+}
+
+.menu .navbar {
+    .nav-list{
+        li{
+            margin-right: 70px;
+            display: inline-block;
+
+        }
+    }
+    
+}
+    .menu .navbar {
+        ul {
+            margin-right: 20px;
+            float: right;
+
+            li {
+                display: inline-block;
+                line-height: 80px;
+                
+
+
+                a {
+                    color:  #899B45;
+                    font-size: 18px;
+                    padding: 7px 13px;
+                    border-radius: 3px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        li a {
+
+            &.active,
+            &:hover {
+                background: #d4e49f;
+                transition: background-color 0.3s ease;
+            }
+        }
+    }
+
+
+
+    .enlace {
+        position: absolute;
+        padding: 20px 50px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .menu-icono {
+        width: 25px;
+    }
+
+    .menu .navbar ul li a:hover {
+        color:  #899B45;
+    }
+
+    .header-content {
+        text-align: center;
+
+        h1 {
+            font-size: 40px;
+            line-height: 77px;
+            color: #000000;
+            text-transform: uppercase;
+            margin-bottom: 35px;
+        }
+
+        p {
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            padding: 0 250px;
+            margin-bottom: 25px;
+        }
+    }
+
+    .btn-1 {
+        display: inline-block;
+        padding: 8px 18px;
+        background-color:  #899B45;
+        color: black;
+        text-transform: uppercase;
+        border: 2px solid  #899B45;
+        border-radius: 20px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: initial;
+        }
+    }
+
+    .checkbtn {
+        font-size: 30px;
+        color: #899B45;
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+        transition: color 0.3s ease;
+    }
+
+    #check {
+        display: none;
+    }
+
+    .menu .navbar section {
+        background-size: cover;
+        background-position: center center;
+        height: calc(100vh - 80px);
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #fafafa;
+        min-width: 300px;
+        margin-right: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+
+        &:hover {
+            background-color: #ddd;
+        }
+    }
+
+    .about {
+        background: #fafafa;
+    }
+
+    .title {
+        margin-bottom: 40px;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .btn {
+        display: inline-block;
+        height: 15px;
+        padding: 10px 40px;
+        border: 2px solid #899B45;
+        @include idk;
+        background: transparent;
+
+        &:hover {
+            background: none;
+        }
+    }
+
+    .btn-home {
+        display: flex;
+
+        a {
+            margin: 0 10px;
+        }
+
+
+    }

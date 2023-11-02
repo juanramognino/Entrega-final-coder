@@ -1,0 +1,242 @@
+/* Media query para pantallas muy pequeñas (menos de 420px) */
+@media (min-width: 320px) and (max-width: 419px) {
+    .header {
+        padding: 80px 30px 30px 30px;
+    }
+
+    .header-content {
+        padding: 50px 30px;
+
+        h1 {
+            font-size: 35px;
+            line-height: 36px;
+        }
+
+        p {
+            padding: 0 20px;
+        }
+    }
+    .checkbtn {
+        display: block;
+        cursor: pointer;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.9);
+        top: 97px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px 0;
+        line-height: 30px;
+
+        a {
+            font-size: 16px;
+        }
+    }
+
+    li a {
+
+        &:hover,
+        &.active {
+            background: none;
+            color: red;
+        }
+    }
+
+    .menu {
+        padding: 10px 0;
+
+        .navbar ul li {
+            line-height: 40px;
+        }
+    }
+
+    .sau h4 {
+        padding-bottom: 5px;
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+    .btn-1 {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .btn-home a {
+        margin: 0 5px;
+    }
+
+    .general {
+        h2 {
+            font-size: 18px;
+            line-height: 30px;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+    }
+
+    .general-1 {
+        padding: 20px;
+
+        h2 {
+            font-size: 16px;
+            margin: 8px 0;
+        }
+    }
+
+    .general-2,
+    .general-3 {
+        height: 400px;
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    p {
+        font-size: 14px;
+        margin: 20px 0 30px 0;
+    }
+
+    .sau {
+        padding: 20px;
+        text-align: center;
+
+        h4 {
+            padding-bottom: 10px;
+            color: black;
+            font-size: 18px;
+        }
+    }
+
+    .box-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+
+        .box {
+            width: 100%;
+
+            h3 {
+                font-size: 18px;
+                color: black;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .product-category {
+        width: 100%;
+
+        h3 {
+            font-size: 16px;
+            margin-top: 8px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-top: 8px;
+        }
+
+        a {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+    }
+
+    .product-item {
+        padding: 15px;
+        flex: 0 0 calc(50% - 20px); /* Cambia 15.33% a 50% */
+        max-width: calc(50% - 20px); /* Cambia 15.33% a 50% */
+    }
+
+        h3 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+    
+
+    .buy-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .footer-link {
+        flex-direction: column;
+    }
+
+    .link,
+    .col-lg-4 {
+        width: 100%;
+    }
+
+    .link {
+        h3 {
+            font-size: 14px;
+            margin-bottom: 8px;
+            margin-top: 16px;
+        }
+
+        a {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+    }
+
+    .col-lg-4 a {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .socials a {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+    .socials a {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        line-height: 35px;
+        margin: 0 5px 5px 0;
+    }
+}
